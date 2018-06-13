@@ -1,8 +1,9 @@
 import React from "react";
 
-const NavBar = ({text}) => (
+const NavBar = (props) => (
   <div className="item">
-    <p>{text}</p>
+    <h2>{props.text}</h2>
+    {props.items.map(item=> <p>{item}</p>)}
   </div>
 );
 

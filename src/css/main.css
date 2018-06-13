@@ -1,53 +1,75 @@
 html,body{
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
 }
 
-body{
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 46px;
+    margin: 0 0 0 0;
+    }
+h2 {
+    font-family: 'Grand Hotel';
+    font-weight: normal;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+    color: white;
+    }
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+    }
+
+
+body > section{
   display: flex;
   flex-direction: column;
   background-color: #353638;
 }
 
 .nav{
-  height: 90vh;
+  height: 85vh;
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  order: 1;
 }
 
 .nav div{
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   flex-basis: 30%;
   flex: 1;
-  transition: 1s;
-  
+  transition: 1.5s ease-in-out;
   background-position: center bottom;
       background-size: cover;
   cursor: pointer;
 }
 
 .nav div:nth-child(1){
-  background-image: url("http://icbas.edu/wp-content/uploads/2014/12/est_1.jpg");
+  background-image: linear-gradient(rgba(53, 54, 56,.1),rgba(53, 54, 56,.9)),url("http://icbas.edu/wp-content/uploads/2014/12/est_1.jpg");
 }
 
 .nav div:nth-child(2){
-  background-image: url("https://healthandbeautybay.com/wp-content/uploads/2018/02/Where-to-Buy-Esthetician-Products-Wholesale.jpg");
+  background-image: linear-gradient(rgba(53, 54, 56,.1),rgba(53, 54, 56,.9)),url("https://healthandbeautybay.com/wp-content/uploads/2018/02/Where-to-Buy-Esthetician-Products-Wholesale.jpg");
 }
 
 .nav div:nth-child(3){
-  background-image: url("http://s11370.pcdn.co/wp-content/uploads/2015/10/coba-estheticians-cosmetology-school-orange-county-blog-banner.jpg");
+  background-image: linear-gradient(rgba(53, 54, 56,.1),rgba(53, 54, 56,.9)),url("http://nebula.wsimg.com/59f7b17308e03fcacfc669ed97b9f9e1?AccessKeyId=90893D33150A62BF477E&disposition=0&alloworigin=1");
 }
 
 .nav div:nth-child(4){
-  background-image: url("http://centraloc.edu/wp-content/uploads/2017/01/Esthetician.jpg");
+  background-image: linear-gradient(rgba(53, 54, 56,.1),rgba(53, 54, 56,.9)),url("https://img.grouponcdn.com/deal/wn3j6EANDgUkTtgjJ7Zy/iu-4845x2907/v1/c700x420.jpg");
 }
 
 .nav div:hover{
-  transition: 1s;
+  transition: 1.5s ease-in-out; 
   flex: 2;
 }
 
@@ -56,17 +78,38 @@ body{
   height: 100%;
 }
 
-.nav > div > p {
+.nav > div h2, .nav > div p {
   text-align: center;
-  font-weight: bold;
-  font-size: 2em;
-  color: black;
   opacity: 0;
   cursor: pointer;
+  color: white;
 }
 
-.nav div:hover > p{
+.nav >div> h2 {
+  font-size: 3em;
+  
+}
+
+.nav div:hover > h2, p{
   opacity: 1;
-  transition: .3s;
+  transition: 1.5s ease-in-out;
   transform: none;
+}
+
+.bottom{
+  height: 15vh;
+  order: 2;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px){
+  .bottom{
+    order: 0;
+    height: 10vh;
+  }
+  .nav {
+    display: none;
+    order: 1;
+  }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import NavBar from "../presentational/NavBar"
+import BottomBar from "../presentational/BottomBar"
 import '../../../css/main.css'
 
 class FormContainer extends Component {
@@ -9,26 +10,28 @@ class FormContainer extends Component {
     this.state = {
       
     };
-    this.handleChange = this.handleChange.bind(this);
   }
-  handleChange(event) {
-    this.setState({ [event.target.id]: event.target.value });
+  handleChange(id) {
+    console.log(id)
   }
   render() {
-    const { seo_title } = this.state;
+    //const { seo_title } = this.state;
     return (
+    <section>
       <div className="nav">
-        <NavBar text="Facials"/>
-        <NavBar text="Facials"/>
-        <NavBar text="Facials"/>
-        <NavBar text="Facials"/>
+        <NavBar text="Facials" items={["test", "test"]}/>
+        <NavBar text="Make Up" items={["test", "test"]}/>
+        <NavBar text="DermaCycles" items={["test", "test"]}/>
+        <NavBar text="Waxing" items={["test", "test"]}/>
       </div>
+      <BottomBar handle={this.handleChange} text="Mollie Dixon"/>
+    </section>
     );
   }
 }
 export default FormContainer;
 
-const wrapper = document.querySelector(".container");
+const wrapper = document.querySelector("Body");
 wrapper ? ReactDOM.render(<FormContainer />, wrapper) : false;
   
   
