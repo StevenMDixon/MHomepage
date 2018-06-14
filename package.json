@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --https --mode development",
-    "build": "webpack"
+    "build": "webpack",
+    "heroku-postbuild": "webpack -p"
   },
   "keywords": [],
   "author": "",
