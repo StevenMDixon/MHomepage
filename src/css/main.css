@@ -34,7 +34,7 @@ body > section{
 }
 
 .nav{
-  height: 85vh;
+  height: 80vh;
   display: flex;
   flex-flow: row;
   overflow: hidden;
@@ -102,7 +102,7 @@ body > section{
 
 .bottom{
   min-height: 15vh;
-  height:  15vh;
+  height:  20vh;
   order: 2;
   color: white;
   text-align: center;
@@ -126,6 +126,9 @@ body > section{
     height:  20vh;
     order: 0;
   }
+  .bottom span{
+    display: none;
+  }
   .nav {
     flex-flow: row;
     flex-wrap: wrap;
@@ -141,6 +144,9 @@ body > section{
     max-height: 100vh;
     flex-basis: 100%;
     max-width: 50%;
+  }
+  .nav > div > h2 {
+    margin-top: 10vh;
   }
   .nav > div > p{
     opacity: 1;
