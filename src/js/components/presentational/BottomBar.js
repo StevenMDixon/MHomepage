@@ -1,9 +1,12 @@
 import React from "react";
 
 const BottomBar = (props) => (
-  <div className="bottom" onClick={()=>props.handle('test')}>
-    <h1>{props.text}</h1>
+  <div className= "bottom" >
+    <h1>&#9753; {props.text} &#10087;</h1>
     <h2>Professional Esthetician</h2>
+    <span>
+    <p onClick={()=>props.handle()}>Book Now</p>
+    </span>
   </div>
 );
 

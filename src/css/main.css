@@ -1,13 +1,15 @@
 html,body{
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0;
+  padding: 0;
+  overflow-y: hidden;
 }
 
 h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 46px;
+    font-size: 2em;
     margin: 0 0 0 0;
     }
 h2 {
@@ -19,7 +21,7 @@ h2 {
     }
 p {
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 1.3em;
     line-height: 23px;
     margin: 0 0 23px 0;
     }
@@ -37,35 +39,40 @@ body > section{
   flex-direction: row;
   overflow: hidden;
   order: 1;
+  background: linear-gradient(rgba(53, 54, 56,.1),rgba(53, 54, 56,.9))
 }
 
 .nav div{
   display: flex;
   flex-flow: column;
-  justify-content: center;
   align-items: center;
   flex-basis: 30%;
   flex: 1;
   transition: 1.5s ease-in-out;
   background-position: center bottom;
-      background-size: cover;
+  background-size: cover;
   cursor: pointer;
+  text-align: center;
 }
 
 .nav div:nth-child(1){
-  background-image: linear-gradient(rgba(53, 54, 56,.1),rgba(53, 54, 56,.9)),url("http://icbas.edu/wp-content/uploads/2014/12/est_1.jpg");
+  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("https://images.pexels.com/photos/3192/woman-girl-beauty-mask.jpg");
 }
 
 .nav div:nth-child(2){
-  background-image: linear-gradient(rgba(53, 54, 56,.1),rgba(53, 54, 56,.9)),url("https://healthandbeautybay.com/wp-content/uploads/2018/02/Where-to-Buy-Esthetician-Products-Wholesale.jpg");
+  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("https://images.pexels.com/photos/457701/pexels-photo-457701.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
 
 .nav div:nth-child(3){
-  background-image: linear-gradient(rgba(53, 54, 56,.1),rgba(53, 54, 56,.9)),url("http://nebula.wsimg.com/59f7b17308e03fcacfc669ed97b9f9e1?AccessKeyId=90893D33150A62BF477E&disposition=0&alloworigin=1");
+  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("https://images.freeimages.com/images/large-previews/0f7/sunbathing-1436371.jpg");
 }
 
 .nav div:nth-child(4){
-  background-image: linear-gradient(rgba(53, 54, 56,.1),rgba(53, 54, 56,.9)),url("https://img.grouponcdn.com/deal/wn3j6EANDgUkTtgjJ7Zy/iu-4845x2907/v1/c700x420.jpg");
+  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("https://images.pexels.com/photos/745128/pexels-photo-745128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.nav div:nth-child(5){
+  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("https://images.pexels.com/photos/839605/pexels-photo-839605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
 
 .nav div:hover{
@@ -73,27 +80,21 @@ body > section{
   flex: 2;
 }
 
-.responsive{
-  width: 100%;
-  height: 100%;
+.nav > div > h2 {
+  margin-top: 20vh;
+  font-size: 3em;
 }
 
-.nav > div h2, .nav > div p {
-  text-align: center;
+.nav > div > p {
   opacity: 0;
   cursor: pointer;
   color: white;
+  transition: 3s ease-in-out;
 }
 
-.nav >div> h2 {
-  font-size: 3em;
-  
-}
-
-.nav div:hover > h2, p{
+.nav div:hover > *{
   opacity: 1;
-  transition: 1.5s ease-in-out;
-  transform: none;
+  transition: 3s ease-in-out;
 }
 
 .bottom{
@@ -101,12 +102,24 @@ body > section{
   order: 2;
   color: white;
   text-align: center;
+  cursor: default;
 }
 
-@media screen and (max-width: 600px){
+.bottom  p{
+  margin: auto auto;
+  width: 30%;
+  transition: 1s;
+}
+
+.bottom  p:hover{
+  transition: 1s;
+  color: brown;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px){
   .bottom{
     order: 0;
-    height: 10vh;
   }
   .nav {
     display: none;
