@@ -4,11 +4,18 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 
 module.exports =  {
+   entry: {
+      app: './src/index.js',
+    },
+     output: {
+        path: __dirname + "/dist",
+        filename: "main.js",
+  },
   module: {
    rules: [
       {
         test: /\.(png|jpg)$/,
-        loader: 'url-loader'
+        loader: 'url-loader?limit=1024&name=images/[name].[ext]'
       },
       {
         test: /\.js$/,
@@ -34,11 +41,17 @@ module.exports =  {
        }
     ]
   },
-
+  devtool: 'source-map',
   plugins: [
-    // Extract imported CSS into own file
-    //new ExtractTextPlugin('[name].bundle.css'),
-    // Minify JS
+     new webpack.LoaderOptionsPlugin({
+      minimize: true,
+    }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.ModuleConcatenationPlugin(),
     new UglifyJsPlugin({
 	    uglifyOptions: {
 	      output: {
@@ -49,9 +62,5 @@ module.exports =  {
 	      warnings: false
 	    }
 	}),
-    // Minify CSS
-    new webpack.LoaderOptionsPlugin({
-      minimize: true,
-    }),
-  ],
+  ]
 };
