@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:dev": "webpack --env dev",
-    "build:prod": "webpack -p --env prod --progress --profile --colors",
+    "build:dev": "webpack --env dev --mode development",
+    "build:prod": "webpack -p --env prod --mode production --progress --profile --colors",
     "postinstall": "npm install express"
   },
   "keywords": [],

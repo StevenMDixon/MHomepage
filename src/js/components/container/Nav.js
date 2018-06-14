@@ -26,6 +26,7 @@ class FormContainer extends Component {
         <NavBar text="Spa" items={["MicroDerm", "MicroCurrent", "Body Wraps", "Reflexology", "Body Polish"]}/>
         <NavBar text="Tanning" items={["Bronze", "Face Only", "Legs Only",  "Orignal Airbrush"]}/>
         <NavBar text="Waxing" items={[ "Bikini", "Back", "Brow", "Leg", "Under Arm"]}/>
+        <NavBar text="" items={[ "Book Now", "Tap Here"]} handle={this.handleChange}/>
       </div>
       <BottomBar handle={this.handleChange} text="Mollie Dixon"/>
     </section>

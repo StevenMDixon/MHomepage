@@ -11,7 +11,7 @@ module.exports = {
     rules: [
       {
         test: /\.(png|jpg)$/,
-        loader: 'url-loader'
+        loader: 'url-loader?limit=1024&name=images/[name].[ext]'
       },
       {
         test: /\.js$/,
