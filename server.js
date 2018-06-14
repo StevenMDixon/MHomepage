@@ -11,7 +11,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/main.js', function(req, res, next) {  
-    res.sendfile('main.js'); 
+    res.sendfile(path.join(public, 'index.html')); 
 });
 
 var port = process.env.PORT || 5000;

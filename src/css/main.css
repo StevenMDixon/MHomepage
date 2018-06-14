@@ -56,23 +56,23 @@ body > section{
 }
 
 .nav div:nth-child(1){
-  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("https://images.pexels.com/photos/3192/woman-girl-beauty-mask.jpg");
+  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("../images/facial.jpg");
 }
 
 .nav div:nth-child(2){
-  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("https://images.pexels.com/photos/457701/pexels-photo-457701.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("../images/makeup.jpg");
 }
 
 .nav div:nth-child(3){
-  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("https://images.freeimages.com/images/large-previews/0f7/sunbathing-1436371.jpg");
+  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("../images/spa.jpg");
 }
 
 .nav div:nth-child(4){
-  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("https://images.pexels.com/photos/745128/pexels-photo-745128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("../images/tan.jpg");
 }
 
 .nav div:nth-child(5){
-  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("https://images.pexels.com/photos/839605/pexels-photo-839605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("../images/legs.jpg");
 }
 
 .nav div:hover{
