@@ -5,7 +5,7 @@ app = express();
 app.use(serveStatic(__dirname));
 
 app.get('/', function(req, res){
-    res.sendfile('index.html', { root: __dirname + "./dist/" } );
+    res.sendFile(path.resolve(__dirname + '/dist/index.html'));
 });
 
 
