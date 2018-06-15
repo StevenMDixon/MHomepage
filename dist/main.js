@@ -415,6 +415,17 @@ eval("module.exports = __webpack_require__.p + \"images/facial.jpg\";\n\n//# sou
 
 /***/ }),
 
+/***/ "./src/images/favicon.ico":
+/*!********************************!*\
+  !*** ./src/images/favicon.ico ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/favicon.ico\";\n\n//# sourceURL=webpack:///./src/images/favicon.ico?");
+
+/***/ }),
+
 /***/ "./src/images/legs.jpg":
 /*!*****************************!*\
   !*** ./src/images/legs.jpg ***!
@@ -467,7 +478,7 @@ eval("module.exports = __webpack_require__.p + \"images/tan.jpg\";\n\n//# source
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _Nav = __webpack_require__(/*! ./js/components/container/Nav */ \"./src/js/components/container/Nav.js\");\n\nvar _Nav2 = _interopRequireDefault(_Nav);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\nvar _Nav = __webpack_require__(/*! ./js/components/container/Nav */ \"./src/js/components/container/Nav.js\");\n\nvar _Nav2 = _interopRequireDefault(_Nav);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n__webpack_require__(/*! ./images/favicon.ico */ \"./src/images/favicon.ico\");\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

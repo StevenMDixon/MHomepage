@@ -15,6 +15,14 @@ module.exports =  {
   },
   module: {
    rules: [
+     {
+        test: /favicon\.ico$/,
+        loader: 'url-loader',
+        query: { 
+          limit: 1,
+          name: '[name].[ext]',
+        },
+      },
       {
         test: /\.(png|jpg)$/,
         loader: 'url-loader'

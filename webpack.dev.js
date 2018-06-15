@@ -10,7 +10,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpg)$/,
+        test: /\.(png|jpg|ico)$/,
         loader: 'url-loader?limit=1024&name=images/[name].[ext]'
       },
       {
