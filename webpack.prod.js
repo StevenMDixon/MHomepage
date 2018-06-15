@@ -1,8 +1,10 @@
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-
-
+const { ImageminWebpackPlugin } = require("imagemin-webpack");
+// Before importing imagemin plugin make sure you add it in `package.json` (`dependencies`) and install
+const imageminGifsicle = require("imagemin-gifsicle");
+const plugins = [imageminGifsicle()];
 module.exports =  {
    entry: {
       app: './src/index.js',
@@ -15,7 +17,7 @@ module.exports =  {
    rules: [
       {
         test: /\.(png|jpg)$/,
-        loader: 'url-loader?limit=1024&name=images/[name].[ext]'
+        loader: 'url-loader'
       },
       {
         test: /\.js$/,
@@ -62,5 +64,10 @@ module.exports =  {
 	      warnings: false
 	    }
 	}),
+	 new ImageminWebpackPlugin({
+      imageminOptions: {
+        plugins
+      }
+    })
   ]
 };
