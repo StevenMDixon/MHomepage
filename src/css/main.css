@@ -101,6 +101,10 @@ body > section{
 }
 
 .bottom{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   min-height: 15vh;
   height:  20vh;
   order: 2;
@@ -110,8 +114,6 @@ body > section{
 }
 
 .bottom  p{
-  margin: auto auto;
-  width: 30%;
   transition: 1s;
 }
 
@@ -126,14 +128,17 @@ body > section{
     height:  10vh;
     order: 0;
   }
+  body{
+    overflow-y:scroll;
+  }
   .bottom span{
     display: none;
   }
   .nav {
+    height: 100%;
     flex-flow: row;
     flex-wrap: wrap;
     order: 1;
-    overflow: scroll;
   }
   .nav div:hover{
     
@@ -141,7 +146,7 @@ body > section{
   .nav div{
     display: block;
     background-image: none;
-    max-height: 100vh;
+    min-height: 70vh;
     flex-basis: 100%;
     max-width: 50%;
   }
