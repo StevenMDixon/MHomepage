@@ -39,7 +39,6 @@ body > section{
   flex-flow: row;
   overflow: hidden;
   order: 1;
-  background: linear-gradient(rgba(53, 54, 56,.1),rgba(53, 54, 56,.9))
 }
 
 .nav div{
@@ -55,49 +54,61 @@ body > section{
   text-align: center;
 }
 
-.nav div:nth-child(1){
-  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("../images/facial.jpg");
-}
 
-.nav div:nth-child(2){
-  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("../images/makeup.jpg");
-}
-
-.nav div:nth-child(3){
-  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("../images/spa.jpg");
-}
-
-.nav div:nth-child(4){
-  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("../images/tan.jpg");
-}
-
-.nav div:nth-child(5){
-  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.9)),url("../images/legs.jpg");
-}
 .nav div:nth-child(6){
   display:none;
 }
 
-.nav div:hover{
-  transition: 1.5s ease-in-out; 
+.card{
+  position: relative;
+  overflow: hidden;
+}
+
+.card:after{
+  content: '';    
+  display: block;
+  height: 100%;
+  background-image: linear-gradient(rgba(53, 54, 56,0),rgba(53, 54, 56,.7));
+  position: absolute;
+    top: 0; left: 0;
+    opacity: 1;
+    width: 100%;
+    z-index: -100;
+    border-radius: inherit;
+}
+
+.card-image{
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 10;
+  z-index: -100;
+  object-fit: contain;
+}
+
+.card:hover{
+  transition: 1s ease-in-out; 
   flex: 2;
 }
 
-.nav > div > h2 {
+.card .card-title {
   margin-top: 20vh;
   font-size: 3em;
+  z-index: 10;
 }
 
-.nav > div > p {
+.lower-titles{
   opacity: 0;
   cursor: pointer;
   color: white;
-  transition: 3s ease-in-out;
+  transition: 2s ease-in-out;
+  z-index: 10;
 }
 
-.nav div:hover > *{
+
+.card:hover > *{
   opacity: 1;
-  transition: 3s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .bottom{
@@ -107,14 +118,10 @@ body > section{
   align-items: center;
   min-height: 15vh;
   height:  20vh;
-  order: 2;
   color: white;
   text-align: center;
   cursor: default;
-}
-
-.bottom  p{
-  transition: 1s;
+  background-color: #353638;
 }
 
 .bottom  p:hover{
@@ -124,39 +131,35 @@ body > section{
 }
 
 @media screen and (max-width: 850px){
-  .bottom{
-    height:  10vh;
-    order: 0;
+  .wrapper{
+    display: flex;
+    flex-direction: column;
   }
   body{
     overflow-y:scroll;
-  }
-  .bottom span{
-    display: none;
   }
   .nav {
     height: 100%;
     flex-flow: row;
     flex-wrap: wrap;
-    order: 1;
   }
-  .nav div:hover{
-    
-  }
-  .nav div{
+  .card{
     display: block;
     background-image: none;
     min-height: 70vh;
+    min-width: 50%;
     flex-basis: 100%;
     max-width: 50%;
   }
-  .nav > div > h2 {
+  .card-title {
     margin-top: 10vh;
   }
-  .nav > div > p{
+  .lower-titles{
     opacity: 1;
   }
-  .nav div:nth-child(6){
-    display:block;
-}
+  .card-image{
+    position: absolute;
+    right: -150px;
+    
+  }
 }
