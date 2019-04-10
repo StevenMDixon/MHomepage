@@ -102,13 +102,12 @@ body {
   .nav {
     order: 0;
   }
-  .nav
   .bottom{
-    height: 20vh;
+    height: 15vh;
     order: 1;
   }
   .card{
-    height: 80vh;
+    height: 75vh;
     &:nth-child(6){
       display: none
     }
@@ -124,9 +123,11 @@ body {
       }
     }
     .card-title{
+      cursor: default;
       margin-top: 3em;
     }
     .lower-titles{
+      cursor: default;
       opacity: 0;
       transition: 2s ease-in-out;
     }
@@ -135,5 +136,11 @@ body {
     object-fit: stretch;
     top: -10px;
     left: -10px;
+  }
+  .bottom-bar-button{
+    cursor: pointer;
+    &:hover{
+      color: brown
+    }
   }
 }

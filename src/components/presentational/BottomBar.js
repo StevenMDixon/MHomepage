@@ -5,7 +5,7 @@ const BottomBar = (props) => (
     <h1>&#9753; {props.text} &#10087;</h1>
     <h2>Professional Esthetician</h2>
     <span>
-    <p onClick={()=>props.handle()}>Book Now</p>
+    <p class="bottom-bar-button"onClick={()=>props.handle()}>Book Now</p>
     </span>
   </div>
 );
