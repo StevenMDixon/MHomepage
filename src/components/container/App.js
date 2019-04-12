@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import fire from '../firebase';
+import { Route } from 'react-router-dom';
 
 import Nav from './Nav';
 import BottomBar from "../presentational/BottomBar";
@@ -16,9 +17,23 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-      <Nav />
-      <BottomBar handle={this.handleChange} text="Mollie Dixon"/>
-      <BlogSections />
+        <Route exact path="/" component={()=>(
+         <React.Fragment><Nav />
+          <BottomBar handle={this.handleChange} text="Mollie Dixon"/>
+          </React.Fragment> 
+        )}></Route>
+      <Route exact path="/blog" component={()=>(
+         <React.Fragment>
+          <BottomBar handle={this.handleChange} text="Mollie Dixon"/>
+          <BlogSections />
+          </React.Fragment> 
+        )}></Route>
+      <Route exact path="/reviews" component={()=>(
+         <React.Fragment>
+          <BottomBar handle={this.handleChange} text="Mollie Dixon"/>
+          </React.Fragment> 
+        )}></Route>
+      
       </React.Fragment>
     );
   }
