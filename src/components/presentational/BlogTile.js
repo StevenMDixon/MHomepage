@@ -8,9 +8,9 @@ const BlogTile = (props) => {
     <div className={props.index%2===0? "Blog-OverView-Wrapper normal": "Blog-OverView-Wrapper reverse"}>
         <img alt="Thumbnail for Blog entry" className="Blog-ThumbNail" src={url}></img>
         <div className="Blog-Content-Wrapper">
-        <p className="Blog-Tile-SubTitle">Date: {props.data.date} / Author: {props.data.author}</p>
-        <h1 className="Blog-Tile-Title">{props.data.title}  </h1>
-        <p className="Blog-Tile-Summary"> {props.data.summary.slice(0,400)} ...<a href={`./${props.data.id}`}>Read More</a></p>
+            <h3 className="Blog-Tile-SubTitle">Date: {props.data.date.slice(0,10)} / Author: {props.data.author}</h3>
+            <h1 className="Blog-Tile-Title">{props.data.title}  </h1>
+            <p className="Blog-Tile-Summary"> {props.data.summary.slice(0,400)} ...<a href={`./${props.data.id}`}>Read More</a></p>
         </div>
         
     </div>)
