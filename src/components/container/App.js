@@ -1,42 +1,54 @@
 import React, { Component } from 'react';
 import fire from '../firebase';
-import { Route } from 'react-router-dom';
+import { Route, withRouter, Redirect, Switch } from 'react-router-dom';
 
 import Nav from './Nav';
 import BottomBar from "../presentational/BottomBar";
 import BlogSections from "../container/Blog";
 
 class App extends Component {
-  componentDidMount(){
-    const db = fire.firestore();
-    const userRef = db.collection("fl_content").get().then(refs => console.log(refs));
+  constructor(props){
+    super(props);
+    this.state = {
+      current: 'home'
+    }
   }
-  handleChange = () => { 
-    window.open("http://www.secure-booker.com/angelamichael/MakeAppointment/Search.aspx");
+  handleChange = (route) => {
+    if(route === 'blog'){
+      this.props.history.push('/blog');
+      this.setState({current: 'blog'})
+    }
+    else if(route === 'reviews'){
+      this.props.history.push('/reviews');
+      this.setState({current: 'reviews'})
+    }
+    else{
+      window.open("http://www.secure-booker.com/angelamichael/MakeAppointment/Search.aspx");
+    }
   }
   render() {
     return (
-      <React.Fragment>
+        <Switch>
         <Route exact path="/" component={()=>(
          <React.Fragment><Nav />
-          <BottomBar handle={this.handleChange} text="Mollie Dixon"/>
+          <BottomBar handle={this.handleChange}  currentTab={this.state.current}/>
           </React.Fragment> 
         )}></Route>
-      <Route exact path="/blog" component={()=>(
+      <Route path="/blog/:blogId?" component={()=>(
          <React.Fragment>
-          <BottomBar handle={this.handleChange} text="Mollie Dixon"/>
-          <BlogSections />
+          <BottomBar handle={this.handleChange}  currentTab={this.state.current}/>
+          <BlogSections fire={fire}/>
           </React.Fragment> 
         )}></Route>
-      <Route exact path="/reviews" component={()=>(
+      <Route path="/reviews" component={()=>(
          <React.Fragment>
-          <BottomBar handle={this.handleChange} text="Mollie Dixon"/>
+          <BottomBar handle={this.handleChange} currentTab={this.state.current}/>
           </React.Fragment> 
         )}></Route>
-      
-      </React.Fragment>
+      <Redirect from='/*' to='/' />
+      </Switch>
     );
   }
 }
 
-export default App;
+export default withRouter(App);

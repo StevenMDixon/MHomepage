@@ -95,6 +95,10 @@ body {
   display: none
 }
 
+.bottom-bar-button .current {
+  color: red;
+}
+
 @media screen and (min-width: 700px){
   .card{
     flex-basis: 33%;
@@ -107,9 +111,7 @@ body {
     order: 0;
   }
   .bottom{
-    height: 15vh;
     order: 1;
-    
     h1 {
       font-size: 3rem;
     }
@@ -122,7 +124,6 @@ body {
     &:nth-child(6){
       display: none
     }
-    
     flex: 1;
     transition: 1.5s ease-in-out;
     &:hover{
@@ -162,20 +163,16 @@ body {
     flex: 1;
     transition: .3s ease-in;
     &:hover{
-
       transition: .3s ease-in;
       text-shadow: 5px 2px 10px black;
       transform: scale(1.1)
     }
   }
   .bottom-button-wrapper{
-    margin-top: 3rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: space-around;
-  }
-  .blogsections {
-    order: 3;
   }
 }

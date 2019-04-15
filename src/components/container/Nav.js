@@ -12,7 +12,6 @@ class FormContainer extends Component {
     this.state = {
       conversion: false
     };
-    
   }
   handleChange = () => { 
     window.open("http://www.secure-booker.com/angelamichael/MakeAppointment/Search.aspx");
