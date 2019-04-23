@@ -2,16 +2,9 @@
     order: 3;
     display: flex;
     flex-direction: column;
-    height: 75vh;
     color: white;
-    padding : 1rem;
+    padding : 1em;
     align-items: center;
-    a {
-        color: #fff;
-        &:visited{
-            color: rgb(80, 80, 80);
-        }
-    }
     p:hover, h1:hover, h2:hover{
         cursor: default;
     }
@@ -19,15 +12,16 @@
 
 .Blog-ThumbNail {
     object-fit: stretch;
-    max-width: 30%;
-    max-height: 40vh;
+    max-width: 40%;
+   
 }
 
 .Blog-Tile-Title {
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 
 .Blog-Tile-SubTitle{
+    display: block;
     font-size: 1rem;
     margin-bottom: 0em;
     color: rgb(114, 108, 108);
@@ -39,19 +33,26 @@
 }
 
 .Blog-OverView-Wrapper{
-    margin: 2em;
+    margin: 1em;
     display: flex;
     width: 80%;
     max-height: 50vh;
-    padding: .2rem;
+    padding: 1rem;
     border: 2px solid transparent;
     border-radius: 5px;
     box-shadow: 5px 2px 10px rgb(27, 27, 27);
     &:hover{
         border: 2px solid rgb(110, 110, 110);
         transition: .3s ease-in-out;
-        
     }
+}
+
+.Blog-readmore{
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .reverse{

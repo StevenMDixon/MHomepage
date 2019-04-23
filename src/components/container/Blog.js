@@ -8,11 +8,13 @@ class BlogSections extends Component {
         super(props);
         this.state = {
             docs: [],
-            thumbs: []
+            thumbs: [],
+            currentBlog: ""
         }
     }
     componentDidMount(){
         console.log(this.props)
+        this.setState({currentBlog: this.props.match.params.blogId});
         const db = this.props.fire.firestore();
         db.collection("fl_content").get()
         .then(refs => this.setState({docs: refs.docs.reverse().filter(item => item.data().status === "published").map(item => item.data())}
@@ -21,9 +23,14 @@ class BlogSections extends Component {
             .then((data)=>this.setState({thumbs: data.map(i => i.data())}))
         }));
     }
+    openArticle = (e, id) =>{
+        e.preventDefault();
+        this.props.history.push(`blog/${id}`);
+    }
     render(){
         return (<div className="Blog-Sections">
-        {this.state.docs.map((blog, i) => <BlogTile fire key={i+'l'} index={i} data={blog} image={this.state.thumbs.filter(i => i.id === blog.blogThumbNail[0].id)[0]} />)}
+        {this.state.currentBlog ? null :
+        this.state.docs.map((blog, i) => <BlogTile fire key={i+'l'} index={i} data={blog} navigateTo={this.openArticle} image={this.state.thumbs.filter(i => i.id === blog.blogThumbNail[0].id)[0]} />)}
         </div>)
     }
 }

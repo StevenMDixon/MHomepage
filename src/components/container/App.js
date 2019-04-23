@@ -28,25 +28,18 @@ class App extends Component {
   }
   render() {
     return (
+      <React.Fragment>
         <Switch>
         <Route exact path="/" component={()=>(
-         <React.Fragment><Nav />
-          <BottomBar handle={this.handleChange}  currentTab={this.state.current}/>
-          </React.Fragment> 
+           <Nav />
         )}></Route>
       <Route path="/blog/:blogId?" component={()=>(
-         <React.Fragment>
-          <BottomBar handle={this.handleChange}  currentTab={this.state.current}/>
-          <BlogSections fire={fire}/>
-          </React.Fragment> 
-        )}></Route>
-      <Route path="/reviews" component={()=>(
-         <React.Fragment>
-          <BottomBar handle={this.handleChange} currentTab={this.state.current}/>
-          </React.Fragment> 
+          <BlogSections fire={fire} />
         )}></Route>
       <Redirect from='/*' to='/' />
       </Switch>
+      <BottomBar handle={this.handleChange} currentTab={this.state.current}/>
+      </React.Fragment>
     );
   }
 }
