@@ -96,10 +96,6 @@ body {
   display: none
 }
 
-.bottom-bar-button .current {
-  color: red;
-}
-
 @media screen and (min-width: 700px){
   .card{
     flex-basis: 33%;
@@ -161,6 +157,7 @@ body {
     max-width: 30%;
     flex: 1;
     transition: .3s ease-in;
+    outline:0;
     &:hover{
       transition: .3s ease-in;
       text-shadow: 5px 2px 10px black;

@@ -6,7 +6,6 @@ const BottomBar = (props) => (
     <h2>Professional Esthetician</h2>
     <div className="bottom-button-wrapper">
     <button className="bottom-bar-button"onClick={()=>props.handle("book")}>Book Now</button>
-    
     <button className="bottom-bar-button"onClick={()=>props.handle("blog")}>Blog</button>
     </div>
   </div>
