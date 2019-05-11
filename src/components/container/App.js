@@ -22,6 +22,10 @@ class App extends Component {
       this.props.history.push('/reviews');
       this.setState({current: 'reviews'})
     }
+    else if(route === 'home'){
+      this.props.history.push('/');
+      this.setState({current: 'home'})
+    }
     else{
       window.open("http://www.secure-booker.com/angelamichael/MakeAppointment/Search.aspx");
     }
@@ -38,7 +42,7 @@ class App extends Component {
         )}></Route>
       <Redirect from='/*' to='/' />
       </Switch>
-      <BottomBar handle={this.handleChange} currentTab={this.state.current}/>
+      <BottomBar  current={this.state.current} handle={this.handleChange} currentTab={this.state.current}/>
       </React.Fragment>
     );
   }

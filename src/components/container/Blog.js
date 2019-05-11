@@ -22,12 +22,8 @@ class BlogSections extends Component {
         .map(item => item.data())
         .sort((a,b) => new Date(a.date) > new Date(b.date)? -1:1)}
         , ()=>{
-            Promise.all([...this.state.docs.map(item => item.blogThumbNail[0].get())])
-            .then((data)=>this.setState({thumbs: data.map(i => i.data())}))
+            
         }));
-    }
-    getThumbNail(){
-
     }
     openArticle = (e, id) =>{
         e.preventDefault();
@@ -36,7 +32,7 @@ class BlogSections extends Component {
     render(){
         return (<div className="Blog-Sections">
         {this.state.currentBlog ? <BlogPost post={this.state.docs.filter(item => item.id === this.state.currentBlog)[0]}/> :
-        this.state.docs.map((blog, i) => <BlogTile fire key={i} index={i} data={blog} navigateTo={this.openArticle} image={this.state.thumbs.filter(i => i.id === blog.blogThumbNail[0].id)[0]} />)}
+        this.state.docs.map((blog, i) => <BlogTile fire key={i} index={i} data={blog} navigateTo={this.openArticle} />)}
         </div>)
     }
 }
