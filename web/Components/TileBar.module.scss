@@ -1,0 +1,15 @@
+.tilebar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+@media screen and (min-width: 700px){
+  .tilebar {
+    flex-direction: row;
+    flex-wrap: unset;
+    min-height: 100%;
+    flex: 2;
+  }
+}

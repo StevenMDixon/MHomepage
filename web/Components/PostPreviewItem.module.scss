@@ -1,0 +1,43 @@
+.preview_item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5em;
+  cursor: pointer;
+}
+
+.article_wrapper {
+  margin: 1em 0 0 0;
+}
+
+.preview_date {
+  font-size: 1em;
+  color: #a3a7ad;
+}
+
+.preview_image {
+  height: 240px;
+  width: 100%;
+}
+
+.preview_title {
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.preview_excerpt {
+  font-size: 1.1em;
+}
+
+@media screen and (min-width: 880px){
+  .preview_item {
+    flex-direction: row;
+  }
+  .article_wrapper {
+    margin: 0 0 0 1em;
+  }
+  .preview_image {
+    min-height: 100%;
+    width: 40%;
+  }
+}

@@ -1,0 +1,25 @@
+webpackHotUpdate_N_E("pages/posts",{
+
+/***/ "./node_modules/next/node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./Components/PostPreviewWrapper.module.scss":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./node_modules/resolve-url-loader??ref--5-oneOf-3-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./Components/PostPreviewWrapper.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/next/node_modules/css-loader/dist/runtime/api.js */ "./node_modules/next/node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(true);
+// Module
+exports.push([module.i, ".PostPreviewWrapper_preview_wrapper__3STFY {\n  display: flex;\n  flex-direction: column;\n  flex: 1 1;\n  width: 80%;\n  align-self: center;\n}\n\n@media screen and (min-width: 880px) {\n  .PostPreviewWrapper_preview_wrapper__3STFY {\n    width: 70%;\n  }\n}", "",{"version":3,"sources":["C:/Users/StevenDev/Documents/git/Mhomepage/web/Components/PostPreviewWrapper.module.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,sBAAA;EACA,SAAA;EACA,UAAA;EACA,kBAAA;AACF;;AAEA;EACE;IACE,UAAA;EACF;AACF","file":"PostPreviewWrapper.module.scss","sourcesContent":[".preview_wrapper {\r\n  display: flex;\r\n  flex-direction: column;\r\n  flex: 1;\r\n  width: 80%;\r\n  align-self: center ;\r\n}\r\n\r\n@media screen and (min-width: 880px){\r\n  .preview_wrapper {\r\n    width: 70%\r\n  }\r\n}"]}]);
+// Exports
+exports.locals = {
+	"preview_wrapper": "PostPreviewWrapper_preview_wrapper__3STFY"
+};
+module.exports = exports;
+
+
+/***/ })
+
+})
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9fTl9FLy4vQ29tcG9uZW50cy9Qb3N0UHJldmlld1dyYXBwZXIubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQUE7QUFDQSxrQ0FBa0MsbUJBQU8sQ0FBQyx5SUFBa0U7QUFDNUc7QUFDQTtBQUNBLGNBQWMsUUFBUywrQ0FBK0Msa0JBQWtCLDJCQUEyQixjQUFjLGVBQWUsdUJBQXVCLEdBQUcsMENBQTBDLGdEQUFnRCxpQkFBaUIsS0FBSyxHQUFHLE9BQU8sK0lBQStJLFVBQVUsV0FBVyxVQUFVLFVBQVUsV0FBVyxNQUFNLEtBQUssS0FBSyxVQUFVLEtBQUssbUZBQW1GLG9CQUFvQiw2QkFBNkIsY0FBYyxpQkFBaUIsMEJBQTBCLEtBQUssNkNBQTZDLHdCQUF3Qix5QkFBeUIsS0FBSyxHQUFHO0FBQzl5QjtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwiZmlsZSI6InN0YXRpYy93ZWJwYWNrL3BhZ2VzL3Bvc3RzLjhjZGI3MWEzMTJjNTJkZjBmMjVhLmhvdC11cGRhdGUuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBJbXBvcnRzXG52YXIgX19fQ1NTX0xPQURFUl9BUElfSU1QT1JUX19fID0gcmVxdWlyZShcIi4uL25vZGVfbW9kdWxlcy9uZXh0L25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2Rpc3QvcnVudGltZS9hcGkuanNcIik7XG5leHBvcnRzID0gX19fQ1NTX0xPQURFUl9BUElfSU1QT1JUX19fKHRydWUpO1xuLy8gTW9kdWxlXG5leHBvcnRzLnB1c2goW21vZHVsZS5pZCwgXCIuUG9zdFByZXZpZXdXcmFwcGVyX3ByZXZpZXdfd3JhcHBlcl9fM1NURlkge1xcbiAgZGlzcGxheTogZmxleDtcXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XFxuICBmbGV4OiAxIDE7XFxuICB3aWR0aDogODAlO1xcbiAgYWxpZ24tc2VsZjogY2VudGVyO1xcbn1cXG5cXG5AbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA4ODBweCkge1xcbiAgLlBvc3RQcmV2aWV3V3JhcHBlcl9wcmV2aWV3X3dyYXBwZXJfXzNTVEZZIHtcXG4gICAgd2lkdGg6IDcwJTtcXG4gIH1cXG59XCIsIFwiXCIse1widmVyc2lvblwiOjMsXCJzb3VyY2VzXCI6W1wiQzovVXNlcnMvU3RldmVuRGV2L0RvY3VtZW50cy9naXQvTWhvbWVwYWdlL3dlYi9Db21wb25lbnRzL1Bvc3RQcmV2aWV3V3JhcHBlci5tb2R1bGUuc2Nzc1wiXSxcIm5hbWVzXCI6W10sXCJtYXBwaW5nc1wiOlwiQUFBQTtFQUNFLGFBQUE7RUFDQSxzQkFBQTtFQUNBLFNBQUE7RUFDQSxVQUFBO0VBQ0Esa0JBQUE7QUFDRjs7QUFFQTtFQUNFO0lBQ0UsVUFBQTtFQUNGO0FBQ0ZcIixcImZpbGVcIjpcIlBvc3RQcmV2aWV3V3JhcHBlci5tb2R1bGUuc2Nzc1wiLFwic291cmNlc0NvbnRlbnRcIjpbXCIucHJldmlld193cmFwcGVyIHtcXHJcXG4gIGRpc3BsYXk6IGZsZXg7XFxyXFxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xcclxcbiAgZmxleDogMTtcXHJcXG4gIHdpZHRoOiA4MCU7XFxyXFxuICBhbGlnbi1zZWxmOiBjZW50ZXIgO1xcclxcbn1cXHJcXG5cXHJcXG5AbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA4ODBweCl7XFxyXFxuICAucHJldmlld193cmFwcGVyIHtcXHJcXG4gICAgd2lkdGg6IDcwJVxcclxcbiAgfVxcclxcbn1cIl19XSk7XG4vLyBFeHBvcnRzXG5leHBvcnRzLmxvY2FscyA9IHtcblx0XCJwcmV2aWV3X3dyYXBwZXJcIjogXCJQb3N0UHJldmlld1dyYXBwZXJfcHJldmlld193cmFwcGVyX18zU1RGWVwiXG59O1xubW9kdWxlLmV4cG9ydHMgPSBleHBvcnRzO1xuIl0sInNvdXJjZVJvb3QiOiIifQ==
