@@ -1,1 +1,0 @@
-{"ast":null,"code":"\"use strict\";\n\nvar _client = _interopRequireDefault(require(\"@sanity/client\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nmodule.exports = (0, _client.default)({\n  projectId: 'hp4xw9we',\n  dataset: 'production',\n  useCdn: true\n});","map":null,"metadata":{},"sourceType":"script"}

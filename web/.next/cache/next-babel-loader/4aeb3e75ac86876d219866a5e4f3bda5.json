@@ -1,1 +1,0 @@
-{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport Title from \"./Title\";\nimport styles from \"./Layout.module.scss\";\n\nvar Layout = function Layout(props) {\n  return __jsx(\"div\", {\n    className: styles.main\n  }, __jsx(Title, null), props.children);\n};\n\nexport default Layout;","map":null,"metadata":{},"sourceType":"module"}

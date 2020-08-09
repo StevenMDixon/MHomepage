@@ -13,11 +13,10 @@ function urlFor (source) {
 
 
 const Post = ({data}) => {
-console.log(data)
 const postData = {
   ...data,
   categories: data.categories,
-  mainImage: urlFor(data.mainImage).width(1200).url(),
+  mainImage: urlFor(data.mainImage).width(2000).url(),
   authorImage: urlFor(data.authorImage).width(100).url()
 }
 

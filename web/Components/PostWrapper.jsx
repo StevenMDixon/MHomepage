@@ -21,7 +21,7 @@ const PostWrapper = ({children, post}) => {
        <div className={styles.post_categories}>
          <p>Categories</p>
          <div className = {styles.post_category_wrapper}>
-          {post.categories.map(item => <p>{item}</p>)}
+          {post.categories.map(item => <p key={item}>{item}</p>)}
          </div>
        </div>
       </div>
