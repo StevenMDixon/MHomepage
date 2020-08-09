@@ -1,4 +1,4 @@
-import styles from './title.module.scss';
+import styles from './Title.module.scss';
 
 
 const Title = (props) => (
