@@ -1,5 +1,5 @@
-import TileBar from "../Components/TileBar";
-import Nav from "../Components/Nav";
+import TileBar from '../Components/TileBar';
+import Nav from '../Components/Nav';
 import Layout from '../Components/Layout';
 
 

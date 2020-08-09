@@ -1,0 +1,1 @@
+{"ast":null,"code":"\"use strict\";\n\nvar _interopRequireDefault = require(\"@babel/runtime/helpers/interopRequireDefault\");\n\nvar _client = _interopRequireDefault(require(\"@sanity/client\"));\n\nmodule.exports = (0, _client.default)({\n  projectId: 'hp4xw9we',\n  dataset: 'production',\n  useCdn: true\n});","map":null,"metadata":{},"sourceType":"script"}
