@@ -1,6 +1,6 @@
 import styles from './TileBar.module.scss'
 import TileBarItem from './TileBarItem';
-
+ 
 const TileBar = () => {
 
 
